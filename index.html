@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coffee House</title>
+	<meta charset="utf-8">
+	<link rel="icon" 
+	type="image/png" 
+	href="images/icon.png">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript">
+
+		greeting(form){
+			alert("Hi "+ form.firstName);
+		}
+	</script>
+</head>
+<body>
+	<header class="logobg">
+		<img id="logo" src="images/logo.png" height="100px" width="550px" alt="logo">
+		<div id="navbar-right">
+			<a href="#" data-toggle="modal" data-target="#myModal1" >Make a reservation</a>
+			<a href="#" data-toggle="modal" data-target="#myModal2">About us</a>
+		</div>
+	</header>
+	<div class="row" id="content">
+		<div class="col-sm-3 sidebar" >
+			<img src="images/beans.png" id="beans" height="525px" width="450px"  alt="beans">
+		</div>
+		<div class="col-sm-2 container" style="margin-left: -15px " >
+			<img src="images/coffee.png" id="coffee" alt="cup">
+		</div>
+		<div class="col-sm-7 container" style="margin-left: -15px " >
+			<div id="demo" class="carousel slide" data-ride="carousel">
+
+				<!-- Indicators -->
+
+
+				<!-- The slideshow -->
+				<div class="carousel-inner">
+					<div class="grid carousel-item active ">
+						<div class="row">
+							<div class="card">
+								<div class="card-body">
+									<div class="image-background"><img src="images/menu/breve.png" height="200px" width="230px" style="margin:-20px 0px 0px 0px;"></div>
+									<h5>Coffee Breve</h5>
+									<p>₹100</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<div class="image-background"><img src="images/menu/bicerin.png" height="200px" width="230px" style="margin:-10px 0px 0px 0px;"></div>
+									<h5>Coffee Bicerin</h5>
+									<p>₹150</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<div class="image-background"><img src="images/menu/icedCoffee.png" height="200px" width="150px" style="margin:0px 0px 0px 0px;"></div>
+									<h5>Iced Coffee</h5>
+									<p>₹90</p>
+								</div>
+							</div>
+						</div>	
+						<div class="row">
+							<div class="card">
+								<div class="card-body">
+									<div class="image-background"><img src="images/menu/capuccino.png" height="200px" width="230px" style="margin:-20px 0px 0px 0px;"></div>
+									<h5>Capuccino</h5>
+									<p>₹130</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<div class="image-background"><img src="images/menu/corretto.png" height="180px" width="230px" style="margin:0px 0px 0px 0px;"></div>
+									<h5>Coffee Coretto</h5>
+									<p>₹110</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<div class="image-background"><img src="images/menu/expresso.png" height="200px" width="230px" style="margin:0px 0px 0px 0px;"></div>
+									<h5>Expresso</h5>
+									<p>₹80</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid carousel-item ">
+						<div class="row">
+							<div class="card">
+								<div class="card-body">
+									<div class="image-background"><img src="images/menu/expressoConPanna.png" height="200px" width="230px" style="margin:-20px 0px 0px 10px;"></div>
+									<h5>Expresso Con Panna</h5>
+									<p>₹110</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<div class="image-background"><img src="images/menu/expressoRomano.png" height="180px" width="230px" style="margin:0px 0px 0px 0px;"></div>
+									<h5>Expresso Romano</h5>
+									<p>₹150</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<div class="image-background"><img src="images/menu/flatwhite.png" height="200px" width="200px" style="margin:-10px 0px 0px 0px;"></div>
+									<h5>Coffee Flat White</h5>
+									<p>₹160</p>
+								</div>
+							</div>
+						</div>	
+						<div class="row">
+							<div class="card">
+								<div class="card-body">
+									<div class="image-background"><img src="images/menu/Frappe.png" height="180px" width="230px" style="margin:0px 0px 0px 0px;"></div>
+									<h5>Coffee Frappe</h5>
+									<p>₹130</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<div class="image-background"><img src="images/menu/Freddo.png" height="180px" width="230px" style="border-radius: 5px;"></div>
+									<h5>Coffee Freddo</h5>
+									<p>₹140</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<div class="image-background"><img src="images/menu/galao.png" height="180px" width="230px" style="border-radius: 5px"></div>
+									<h5>Coffee Galao</h5>
+									<p>₹120</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid carousel-item ">
+						<div class="row">
+							<div class="card">
+								<div class="card-body">
+									<div class="image-background"><img src="images/menu/glace.png" height="200px" width="230px" style="margin:-10px 0px 0px 0px;"></div>
+									<h5>Coffee Glace</h5>
+									<p>₹100</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<div class="image-background"><img src="images/menu/irish.png" height="180px" width="230px" style="margin:0px 0px 0px 0px;"></div>
+									<h5>Irish Coffee</h5>
+									<p>₹150</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<div class="image-background"><img src="images/menu/latte.png" height="180px" width="230px" style="border-radius: 5px"></div>
+									<h5>Latte</h5>
+									<p>₹170</p>
+								</div>
+							</div>
+						</div>	
+						<div class="row">
+							<div class="card">
+								<div class="card-body">
+									<div class="image-background"><img src="images/menu/lungo.png" height="200px" width="230px" style="margin:-20px 0px 0px 0px;"></div>
+									<h5>Lungo</h5>
+									<p>₹170</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<div class="image-background"><img src="images/menu/macchiato.png" height="180px" width="230px" style="border-radius: 5px"></div>
+									<h5>Coffee Macchiato</h5>
+									<p>₹110</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<div class="image-background"><img src="images/menu/marocchino.png" height="180px" width="230px" style="border-radius: 5px"></div>
+									<h5>Coffee Marocchino</h5>
+									<p>₹180</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid carousel-item ">
+						<div class="row">
+							<div class="card">
+								<div class="card-body">
+									<div class="image-background"><img src="images/menu/americano.png" height="200px" width="230px" style="margin:-20px 0px 0px 0px;"></div>
+									<h5>Coffee Americano</h5>
+									<p>₹120</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<div class="image-background"><img src="images/menu/auLait.png" height="180px" width="230px" style="margin:-5px 0px 0px 0px;"></div>
+									<h5>Coffee Au Lait</h5>
+									<p>₹150</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<div class="image-background"><img src="images/menu/mocha.png" height="180px" width="230px" style="border-radius: 5px"></div>
+									<h5>Coffee Mocha</h5>
+									<p>₹190</p>
+								</div>
+							</div>
+						</div>	
+						<div class="row">
+							<div class="card">
+								<div class="card-body">
+									<div class="image-background"><img src="images/menu/RAF.png" height="180px" width="230px" style="border-radius: 5px;"></div>
+									<h5>Coffee RAF</h5>
+									<p>₹175</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<div class="image-background"><img src="images/menu/resitretto.png" height="180px" width="230px" style="border-radius: 5px;"></div>
+									<h5>Coffee Rresitretto</h5>
+									<p>₹150</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<div class="image-background"><img src="images/menu/viennaCoffee.png" height="180px" width="230px" style="border-radius: 5px;"></div>
+									<h5>Vienna Coffee</h5>
+									<p>₹180</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Left and right controls -->
+				<a class="carousel-control-prev" href="#demo" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#demo" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+			</div>
+
+		</div>
+	</div>
+	<footer id="footer">
+		<div class="row">
+			<div class="col-sm-3">
+				<h5>We are available at</h5>
+				<p>Kothrud,
+					Shivajinagar,
+					Hadapsar,
+					Katraj,
+					Warje,
+					Deccan,
+					Hinjewadi,
+					Baner,
+					Pashan
+				</ul>	
+			</div>	
+			<div class="col-sm-3">
+				<h5>We will soon be available at</h5>
+				<p>
+					Magarpatta city,Amanoura township,Pune Camp,
+					Balewadi and Yerawada
+				</p>
+				
+			</div>
+			<div class="col-sm-3">
+				
+				<div class="row">
+					<a href="#" class="fa fa-facebook"></a>
+					<a href="#" class="fa fa-twitter"></a>
+					<a href="#" class="fa fa-google"></a>
+					<a href="#" class="fa fa-youtube"></a>
+					<a href="#" class="fa fa-instagram"></a>
+					<a href="#" class="fa fa-pinterest"></a>
+				</div>
+				
+				
+			</div>
+			<div class="col-sm-3">
+				
+			</div>
+		</div>
+		
+		
+		
+		
+	</footer>
+	<div class="modal" id="myModal1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">Make a reservation</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+
+				<!-- Modal body -->
+				<div class="modal-body">
+					<form>
+						<label for="name">Enter Name:</label>
+						<div class="input-group mb-3" id="name">
+							<input type="text" class="form-control" id="firstName" placeholder="First Name">
+							<input type="text" class="form-control" placeholder="Last Name">
+						</div>
+
+						<div class="form-group">
+							<label for="email">Email address:</label>
+							<input type="email" class="form-control" placeholder="Enter email" id="email">
+							
+						</div>
+						<div class="form-group">
+							<label for="cellno">Email cell no :</label>
+							<input type="text" class="form-control" placeholder="Enter cell no" id="cellno" pattern="[789][0-9]{9}" >
+							
+						</div>
+						<div class="form-group">
+							<label for="date">Date</label>
+							<input type="date" name="date" style="width: 150px;">
+							<label for="time">Time</label>
+							<input type="time" name="time" >
+							<label for="person">Seats</label>
+							<input type="number" min="0" max="10" name="reservation" id="person" style="width: 78px;">
+						</div>
+
+
+					</div>
+
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-info"  data-dismiss="modal">Submit</button>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="myModal2">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">Coffee House</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+
+				<!-- Modal body -->
+				<div class="modal-body">
+					<h5>Coffee house is a family that serves delicious coffee to enlight your mood</h5>
+					<P>Find us on </P>
+					<a href="#" class="fa fa-facebook"></a>
+					<a href="#" class="fa fa-twitter"></a>
+					<a href="#" class="fa fa-google"></a>
+					<a href="#" class="fa fa-youtube"></a>
+					<a href="#" class="fa fa-instagram"></a>
+					<a href="#" class="fa fa-pinterest"></a>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>
